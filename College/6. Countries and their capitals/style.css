@@ -1,0 +1,66 @@
+/*.country {
+  color: chartreuse;
+  font-size: 24px;
+}*/
+#enter {
+  background-color: black;
+  color: chartreuse;
+  position: relative;
+  margin: inherit;
+  margin-left: 10px;
+  top: 180px;
+  right: 25%;
+  left: 25%;
+  text-align: center;
+  border-radius: 25px;
+  height: 50px;
+  width: 200px;
+  font-size: 16px;
+}
+
+#capitals {
+  color: chartreuse;
+  background-color: black;
+  font-size: 40px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#countries {
+  height: 50px;
+  width: 250px;
+  margin-left: 110px;
+  background-color: black;
+  color: chartreuse;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+#countries:hover {
+  background-color: chartreuse;
+  color: white;
+}
+
+#options {
+  height: 510px;
+  width: 500px;
+  position: absolute;
+  top: 13.5%;
+  left: 30px;
+  border-radius: 25px;
+  border: 2px solid chartreuse;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-top: 30px;
+}
+
+#capital {
+  height: 542px;
+  width: 850px;
+  border-radius: 25px;
+  position: absolute;
+  border: 0.5px solid white;
+  top: 13.5%;
+  left: 30px;
+  margin-left: 590px;
+}

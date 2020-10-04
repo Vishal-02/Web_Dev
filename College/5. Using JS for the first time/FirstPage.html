@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>First Page Here</title>
+  </head>
+  
+  <body>
+    <script type="text/javascript">
+      
+      function date_display() {
+        var d = new Date();
+        var dateRightNow = d.getDate() + " - " + d.getMonth() + " - " + d.getFullYear();
+        document.getElementById("dateDisplay").value = dateRightNow;
+      }
+      
+      var n1 = window.prompt("Enter the Number for factorial: ");
+      var org = n1;
+      for (var i = n1 -1; i > 0; i--) {
+        n1 = n1 * i;
+      }
+      window.alert("The factorial of " + org + " is " + n1); 
+      
+      var n2 = window.prompt("Enter the number for multiplication table: ");
+//      document.write("<table border=1px>")
+//      for (i = 1; i < 11; i++) {
+//        document.write("<tr><td>" + n2 + " x " + i + "</td><td>" + n2 * i + "</td>");
+//      }
+//      document.write("</table>")
+//      "<tr><td>" + n2 + " x " + i + "</td><td>" + n2 * i + "</td>"
+      var alertTable = "";
+      for (var i = 0; i < 10; i++) {
+        alertTable += n2 + " x " + (i + 1) + " = " + (n2 * (i + 1)) + "\n";
+      }
+      window.alert(alertTable);
+      
+      var sum = window.prompt("Enter a first number to add: ") * 1;
+      var flag = 1;
+      while (true) {
+        flag = window.prompt("Enter another number to add on to the previous one: ");
+        if (flag === null || flag === "")
+          break;
+        sum += parseInt(flag);
+      }
+      window.alert("The total sum of all the numbers is: " + sum);
+    </script>
+    <br>
+    <button onclick="date_display()">Display Date</button>
+    <br> <br>
+    <input id="dateDisplay" >
+  </body>
+</html>

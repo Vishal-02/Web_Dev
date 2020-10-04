@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Registration</title>
+      <link rel="stylesheet" type="text/css" href="Page_one_style.css">
+    </head>
+    
+    <body style="background-color: mediumpurple">
+      <h1>Kat's Bookstore!</h1>
+      <table id="nav_bar">
+        <tr>
+          <td><a href="Home%20Page.html">Home</a></td>
+          <td><a href="Catalogue.html">Catalogue</a></td>
+          <td><a href="Login.html">Login</a></td>
+          <td><a href="Register.html">Register</a></td>
+        </tr>
+      </table>
+      
+      <div class="floatingleft">
+        <table id="popular">
+          <tr>
+            <th>Here are some of our most popular genres:</th>
+          </tr>
+          <tr>
+            <td><a href="Myth.html"><u>Mythology</u></a></td>
+          </tr>
+          <tr>
+            <td><a href="Fiction.html"><u>Fiction</u></a></td>
+          </tr>
+          <tr>
+            <td><a href="Mystery.html"><u>Mystery</u></a></td>
+          </tr>
+          <tr>
+            <td><a href="Kids.html"><u>Kids</u></a></td>
+          </tr>
+<!--
+          <tr>
+            <td><u>Harry Potter</u></td>
+          </tr>
+          <tr>
+            <td><u>Magnus Chase</u></td>
+          </tr>
+-->
+        </table>
+      </div>
+      
+      <div class="register_right">
+        <h2>Register Now!</h2>
+        <form>
+          <label for="name">Enter your handle: <span style="color: white;">hhhhh</span></label>
+          <input type="text" id="name">
+          <br> <br>
+          <label for="gender">Enter your gender:<span style="color: white;">hhhhh</span></label>
+          <select id="gender" style="width: 152px; height: 22px;">
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+          <br> <br>
+          <label for="age">Enter your age:<span style="color: white;">hhhhhhhh</span></label>
+          <input id="age" type="number" min="13" max="100" step="1" style="width: 145px; height: 16\7px">
+          <br> <br>
+          <label for="email">Enter your email id:<span style="color: white;">hhhh</span></label>
+          <input type="email" id="email">
+          <br> <br>
+          <label for="pass">Enter your password:<span style="color: white;">hhh</span></label>
+          <input type="password" id="pass">
+          <br> <br>
+          <label for="repass">Re-enter your password: </label>
+          <input type="password" id="repass">
+          <br> <br>
+          <button type="submit" id="button">Submit</button>
+        </form>
+      </div>
+    </body>
+  </html>

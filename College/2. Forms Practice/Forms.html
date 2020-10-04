@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Information Form</title>
+    </head>
+    
+    <body style="background-color: lightgrey">
+      <h2 style="text-align: center; position: relative; top: -20px">Information Form</h2>
+      <h6 style="text-align: center; position: relative; top: -40px">Made By 2019UCO1553</h6>
+      <p style="text-align: center; position: relative; top: -60px"><b>This form is to collect information about the students in the University. <br>Participation is Optional.</b></p>
+      
+      <div style="text-align: center; position: relative; top: -75px">
+        <a style="font-size: 18px" href="Submit.html"><b>Submit</b></a>
+      </div>
+      
+      <form style="position: relative; top: -72px; background-color: white">
+        <label for="name">Name: </label> <br>
+        <input type="text" name="user_name" id="name" value="Vishal Singh">
+        <br><hr>
+        
+        <label for="roll">Enter your Roll Number: </label> <br>
+        <input type="text" id="roll" value="2019UCO1553">
+        <hr>
+        
+        <label for="user_gender">Gender: </label>
+        <section id="user_gender">
+          <input type="radio" id="male" value="Male" name="gender">
+          <label for="male">Male</label> <br>
+          <input type="radio" id="female" value="Female" name="gender">
+          <label for="female">Female</label> <br>
+          <input type="radio" id="other" value="Other" name="gender">
+          <label for="other">Other</label>
+        </section>
+        
+        <hr>
+          <section id="user_age">
+            <label for="age">Choose your Age Group: </label> <br>
+            <select id="age">
+              <option>Less than 18</option>
+              <option>18-25</option>
+              <option>25-31</option>
+              <option>31-35</option>
+              <option>Older than 35</option>
+            </select>
+          </section>
+        <hr>
+        
+        <label for="user_family">Choose total number of Family Members: </label> <br>
+        <input id="user_family" type="number" min="1" max="10" step="1" value="3">
+        <hr>
+        
+        <label for="hobbies">What are your hobbies? </label> <br>
+        <section id="user_hobbies">
+          <input name="hobby" type="checkbox" id="sports">
+          <label for="sports">Sports</label>
+          <br>
+          <input name="hobby" type="checkbox" id="games">
+          <label for="games">Computer Games</label>
+          <br>
+          <input name="hobby" type="checkbox" id="music">
+          <label for="music">Music (Playing instruments, singing, etc)</label>
+          <br>
+          <input name="hobby" type="checkbox" id="read">
+          <label for="read">Reading</label>
+          <br>
+          <input name="hobby" type="checkbox" id="write">
+          <label for="write">Writing</label>
+          <br>
+          <input name="hobby" type="checkbox" id="volunteer">
+          <label for="volunteer">Volunteering</label>
+          <br>
+          <input name="hobby" type="checkbox" id="photo">
+          <label for="photo">Photography</label>
+          <br>
+          <input name="hobby" type="checkbox" id="dance">
+          <label for="dance">Dance</label>
+          <br>
+          <input name="hobby" type="checkbox" id="art">
+          <label for="art">Art</label>
+          <br>
+          <input name="hobby" type="checkbox" id="other">
+          <label for="other">Other</label>
+        </section>
+        <hr>
+        
+        <label for="food">Are You A Vegetarian or Non-Vegetarian? <br>(Put it in the middle for both)<br></label>
+        <span>Vegetarian</span>
+        <input type="range" name="user_food">
+        <span>Non-Vegetarian</span>
+        <hr>
+      </form>
+    </body>
+  </html>

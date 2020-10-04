@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 6, Web Technology</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  
+  <body style="background-color: black;">
+    
+    <script type="text/javascript">
+      function printCapital() {
+        var countryChosen = document.getElementById("countries");
+        var index = countryChosen.selectedIndex;
+        /*var image = new Image();
+        img.source = 'http://www.bhmpics.com/wallpapers/washington_monument_at_sunset-852x480.jpg';*/
+//        var image = document.createElement("img");
+        if (countryChosen.options[index].text === "India") {
+//          document.getElementById("capitals").innerHTML = "";
+          document.getElementById("capitals").innerHTML = "The Capital of India is New Delhi";
+//          image.src = "https://www.easywallprints.com/upload/designs/india-gate-new-delhi-zoom-1.jpg";
+//          document.getElementById("capital").appendChild(image);
+        } else if (countryChosen.options[index].text === "United States of America") {
+          document.getElementById("capitals").innerHTML = "The Capital of the United States of America is Washington, D.C";
+//          document.getElementById('capital').appendChild(image);
+        } else if (countryChosen.options[index].text === "France") {
+          document.getElementById("capitals").innerHTML ="The Capital of France is Paris";
+        } else if (countryChosen.options[index].text === "Russia") {
+          document.getElementById("capitals").innerHTML = "The Capital of Russia is Moscow";
+        } else {
+          document.getElementById("capitals").innerHTML = "The Capital of Italy is Rome";
+        }
+      }
+    </script>
+    
+    <div id="options">
+      <br><p style="color: chartreuse; text-align: center; font-size: 35px; margin-top: -20px;">Choose a Country from the options below to see it's Capital!</p>
+      <select id="countries" onchange="printCapital()">
+        <option value="bobs">India</option>
+        <option value="guns">United States of America</option>
+        <option value="putin">Russia</option>
+        <option value="baguette">France</option>
+        <option value="pizza">Italy</option>
+      </select>
+<!--      <button type="button" onclick="printCapital()" id="enter">Tell Me It's Capital!</button>-->
+    </div>
+    
+    <div id="capital">
+      <p id="capitals"></p>
+    </div>
+  </body>
+</html>
