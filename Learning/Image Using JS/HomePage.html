@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Adding an Image Dynamically in a Webpage</title>
+  </head>
+  
+  <body>
+    <script type="text/javascript">
+      function insertPic() {
+        
+        var optionchosen = document.getElementById("opt");
+        var choice = optionchosen.selectedIndex;
+        var image = document.createElement("img");
+        var sources = ["245210.jpg", "252906.png", "697221.png"];
+        if (optionchosen.options[choice].text === "option 1") {
+          image.src = sources[choice];
+          document.body.appendChild(image);
+        } else if (optionchosen.options[choice].text === "option 2") {
+          image.src = sources[choice];
+          document.body.appendChild(image);
+        } else {
+          image.src = sources[choice];
+          document.body.appendChild(image);
+        }
+        /*image.src = "https://images.unsplash.com/photo-1430116267665-e7f6b3dafce3?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max";
+        document.body.appendChild(image);*/
+      }
+    </script>
+    <select id="opt" onchange="insertPic()">
+      <option>option 1</option>
+      <option>option 2</option>
+      <option>option 3</option>
+    </select>
+  </body>
+</html>
